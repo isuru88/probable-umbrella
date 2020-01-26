@@ -1,0 +1,66 @@
+<div class="detail-background" [ngStyle]="{'background-image': 'url(' + coverURL + ')'}">
+  <h1>{{asset.title | uppercase}}</h1>
+
+  <div class="play-button-container">
+    <a routerLink="/asset/{{ asset.id | lowercase }}/play">
+      <div class="play-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z" fill="white" />
+          <path d="M0 0h24v24H0z" fill="none" /></svg>
+      </div>
+    </a>
+  </div>
+  <div class="detail-footer">
+    <div class="row full">
+      <div class="row">
+        <div class="button-heading">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+              fill="white" />
+            <path d="M0 0h24v24H0z" fill="none" />
+          </svg>
+        </div>
+        <div class="button"><span>English</span></div>
+        <div class="button"><span>Spanish</span></div>
+      </div>
+      <div class="row">
+        <div class="button-heading">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM4 12h4v2H4v-2zm10 6H4v-2h10v2zm6 0h-4v-2h4v2zm0-4H10v-2h10v2z"
+              fill="white" />
+          </svg>
+        </div>
+        <div class="button"><span>Off</span></div>
+        <div class="button"><span>English</span></div>
+        <div class="button"><span>Arabic</span></div>
+        <div class="button"><span>German</span></div>
+      </div>
+    </div>
+    <section>
+      <div class="row">
+        <img src="{{thumbURL}}">
+        <div class="col detail-content">
+          <div class="row">
+            <span class="detail-name">Duration</span>
+            <span class="detail-value">{{asset.runtime}}</span>
+          </div>
+          <div class="row">
+            <span class="detail-name">Director</span>
+            <span class="detail-value">{{asset.directors}}</span>
+          </div>
+          <div class="row">
+            <span class="detail-name">Stars</span>
+            <span class="detail-value">{{asset.cast}}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p>{{asset.description}}</p>
+    </section>
+  </div>
+</div>

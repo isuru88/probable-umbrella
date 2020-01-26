@@ -1,0 +1,117 @@
+.detail-background {
+  font-family: Roboto;    
+  background-repeat: no-repeat;    
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  left: 0;
+  top: 60px;
+  bottom: 0;
+  width: 100%;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detail-background h1 {
+  padding-left: 20px;
+  font-weight: lighter;
+}
+
+.detail-footer {    
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  bottom: 0;
+  background-image: linear-gradient(rgba(0,0,0,0), #001B30, #001B30, #001B30);  
+  width: 100%;
+}
+
+.detail-footer section {
+  width: 44%;  
+  padding: 20px;  
+}
+
+.detail-footer .col {
+  flex-direction: column;
+  display: flex;
+}
+
+.detail-footer .row {
+  flex-direction: row;
+  display: flex;
+  padding-top: 10px;
+}
+
+.detail-footer .row.full {
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.detail-footer .detail-name {
+  flex: 0 0 125px;  
+  font-weight: lighter;
+}
+
+.detail-footer .detail-value {  
+  font-weight: bold;  
+}
+
+.detail-footer .detail-content {
+  padding-left: 10px;
+  width: 100%;
+}
+
+.detail-footer .button {
+  background-color: #002E53;
+  width: 100px;
+  height: 35px; 
+  padding-left: 10px; 
+  line-height: 35px;
+  margin-right: 6px;
+}
+
+.detail-footer .button-heading {   
+  background-color: #001B30; 
+  height: 30px; 
+  margin-left: 30px;  
+  margin-right: 6px;
+  padding: 6px 6px 0 6px;  
+}
+
+.play-button {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(0, 46, 83, 0.5);
+}
+
+.play-button-container {
+  margin: auto;
+}
+
+
+  
+@media screen and (max-width: 767px) {
+  /* start of medium tablet styles */
+  .detail-footer section {
+    width: 96%;
+    padding: 10px;    
+  }
+
+  .detail-footer .button {
+    width: 80px;
+  }
+
+  .detail-footer .row.full {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-height: 517px) {
+  .detail-footer {
+    bottom: unset;
+  }
+}

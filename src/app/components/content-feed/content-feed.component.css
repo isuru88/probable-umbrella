@@ -1,0 +1,24 @@
+.category {  
+  font-size: x-large;
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-bottom: 0;  
+  padding-left: 10px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main {
+  padding: 10px;
+  background-image: linear-gradient(to right, #052440, #0C5C7F, #052440);
+}

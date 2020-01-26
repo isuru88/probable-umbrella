@@ -1,0 +1,25 @@
+.card {
+  position: relative;
+  background-repeat: no-repeat;
+  min-height: 280px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 183px;
+  margin: 10px;
+}
+
+.container {       
+    background-color: rgba(0, 36, 64, 0.5);
+    width: 100%;
+    position: absolute;
+    bottom: 0;  
+}
+
+.container h4 {
+      color: white;
+      padding-left: 16px;  
+}  
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

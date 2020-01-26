@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.slick-prev {
+  left: 0 !important;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 0 !important;
+  z-index: 1;
+}
