@@ -12,7 +12,7 @@ describe('Asset', () => {
       subtitle: 'testSubtitle',
       cover_path: 'testCoverPath',
       runtime: 1,
-      genres: 'testGenre',     
+      genres: 'testGenre',
       tags: 'testTags'
     });
 
@@ -23,5 +23,5 @@ describe('Asset', () => {
     expect(asset.runtime).toBe(1);
     expect(asset.genres).toBe('testGenre');
     expect(asset.tags).toBe('testTags');
-  })
+  });
 });

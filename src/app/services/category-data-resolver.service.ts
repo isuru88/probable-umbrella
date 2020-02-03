@@ -3,7 +3,7 @@ import { Resolve, Router, ActivatedRouteSnapshot, RouterStateSnapshot } from '@a
 import { Category } from '../models/category';
 import { ContentDataService } from './content-data.service';
 import { Observable, of, EMPTY } from 'rxjs';
-import { mergeMap, map, find, first, take } from 'rxjs/operators';
+import { mergeMap, find } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -16,10 +16,10 @@ export class CategoryDataResolverService implements Resolve<Category>  {
     const categoryName = route.paramMap.get('category');
 
     return this.contentDataService.getCatalog().pipe(
-      find((category) => { return category.name === categoryName }),
+      find((category) => category.name === categoryName),
       mergeMap(category => {
         if (category) {
-          return of(category)
+          return of(category);
         } else {
           this.router.navigate(['/']);
           return EMPTY;

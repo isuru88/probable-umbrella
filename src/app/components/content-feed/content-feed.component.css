@@ -19,6 +19,11 @@ a {
 }
 
 .main {
-  padding: 10px;
+  position: absolute;
+  width: 100%;
   background-image: linear-gradient(to right, #052440, #0C5C7F, #052440);
+}
+
+.wrapper {
+  padding: 10px;
 }

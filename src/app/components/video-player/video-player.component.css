@@ -1,10 +1,15 @@
-.main {
-  padding: 10px;
+.main {  
   background-image: linear-gradient(to right, #052440, #0C5C7F, #052440);
   display: flex;
   flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  top: 60px;
+  width: 100%;
 }
 
 .video {
+  /* Element doesn't scale properly when element overflows vertically */
   margin: auto;
+  width: 100%;
 }

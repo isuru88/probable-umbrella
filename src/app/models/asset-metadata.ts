@@ -11,10 +11,13 @@ export class AssetMetadata {
   runtime: number;
   age_rating: string;
   tags: string;
-  streams: Object[];
-  licensing: Object;
+  streams: object[];
+  licensing: object;
 
-  constructor(values: Object = {}) {
+  constructor(values: object = {}) {
     Object.assign(this, values);
   }
+
+  // age_rating throws lint error for variable name not being lowerCamelCase, PascalCase or UPPER_CASE.
+  // However, this is neccesary since API returns the data in this format
 }

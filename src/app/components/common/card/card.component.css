@@ -6,6 +6,7 @@
   transition: 0.3s;
   width: 183px;
   margin: 10px;
+  height: fit-content;
 }
 
 .container {       

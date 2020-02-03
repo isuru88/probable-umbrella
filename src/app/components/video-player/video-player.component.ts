@@ -8,11 +8,11 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 export class VideoPlayerComponent implements OnInit {
 
   videoPlayer: HTMLVideoElement;
-  
+
   constructor() { }
 
   ngOnInit() {
-  }  
+  }
 
   @ViewChild('videoPlayer', { static: false })
   set mainVideoEl(el: ElementRef) {

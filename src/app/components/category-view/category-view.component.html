@@ -1,5 +1,7 @@
 <section class="main" *ngIf="category">
+  <div class="wrapper">
   <div *ngFor="let asset of category.assets">
     <app-card [item]="asset"></app-card>
   </div>
+</div>
 </section>

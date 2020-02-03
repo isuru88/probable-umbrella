@@ -1,6 +1,14 @@
 .main {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
   background-image: linear-gradient(to right, #052440, #0C5C7F, #052440);  
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap; 
+  align-content: flex-start; 
+  padding: 10px;
 }

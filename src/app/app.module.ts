@@ -23,7 +23,7 @@ import { CardComponent } from './components/common/card/card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
     HttpClientModule,
     SlickCarouselModule
   ],

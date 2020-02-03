@@ -9,10 +9,10 @@ import { CategoryDataResolverService } from './services/category-data-resolver.s
 
 
 const routes: Routes = [
-  { path: "", component: ContentFeedComponent },
-  { path: "category/:category", component: CategoryViewComponent, resolve: { category: CategoryDataResolverService } },
-  { path: "asset/:name", component: DetailViewComponent, resolve: { asset: AssetDataResolverService } },
-  { path: "asset/:name/play", component: VideoPlayerComponent }
+  { path: '', component: ContentFeedComponent },
+  { path: 'category/:category', component: CategoryViewComponent, resolve: { category: CategoryDataResolverService } },
+  { path: 'asset/:name', component: DetailViewComponent, resolve: { asset: AssetDataResolverService } },
+  { path: 'asset/:name/play', component: VideoPlayerComponent }
 ];
 
 @NgModule({

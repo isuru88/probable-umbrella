@@ -15,6 +15,8 @@ export class CategoryViewComponent implements OnInit {
   constructor(private route: ActivatedRoute, private titleService: TitleService) { }
 
   ngOnInit() {
+    // Subscribe to the route data to get the category details.
+    // This gets resoled through the CategoryDataResolverService.
     this.route.data.subscribe((data: { category: Category }) => {
       this.category = data.category;
       this.titleService.setTitle(data.category.name);

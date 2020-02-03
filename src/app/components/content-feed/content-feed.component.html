@@ -1,18 +1,20 @@
 <section class="main" *ngIf="categories.length > 0">
-  <div *ngFor="let category of categories">
-    <a routerLink="/category/{{category.name}}">
-      <div class="category">
-        <span>{{category.name | uppercase}}</span>
-      </div>
-    </a>
-
-    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
-      <div ngxSlickItem *ngFor="let asset of category.assets" class="slide">
-        <div class="view">
-          <app-card [item]="asset"></app-card>
+  <div class="wrapper">
+    <div *ngFor="let category of categories">
+      <a routerLink="/category/{{category.name}}">
+        <div class="category">
+          <span>{{category.name | uppercase}}</span>
         </div>
-      </div>
-    </ngx-slick-carousel>
+      </a>
 
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let asset of category.assets" class="slide">
+          <div class="view">
+            <app-card [item]="asset"></app-card>
+          </div>
+        </div>
+      </ngx-slick-carousel>
+
+    </div>
   </div>
 </section>

@@ -16,12 +16,12 @@ export class AssetDataResolverService implements Resolve<AssetMetadata> {
     const assetName = route.paramMap.get('name');
 
     return this.contentDataService.getAsset(assetName).pipe(mergeMap(asset => {
-      if (asset) {        
+      if (asset) {
         return of(asset);
       } else {
         this.router.navigate(['/']);
         return EMPTY;
       }
-    }))
+    }));
   }
 }
